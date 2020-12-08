@@ -10,9 +10,9 @@ This is a WIP and I am planning on making it easier to customize and use.
 2. Go to the "rich presence art assets" tab and click "add images" to add 2 images for a big image and a small icon to use in the Playing status.
 3. Download the source for this repo and open `index.js` with any text editor (Notepad++ for example) and edit the `const clientID` to have the value of the client ID from the Discord Application created in step 1.
 4. Edit the block within "updatePresence" (`details, state, largeImageKey, smallImageKey` and optional `largeImageText, smallImageText, startTimestamp, endTimestamp`) and save.
-
+5. Run the `install.bat` file.
 ### How to Use
-1. Open a terminal (i.e. command prompt) leading to the folder that this source code is in and run `npm start`.
+1. Run the `start.bat` file.
 2. The Playing status will stay as long as the command prompt window is open.
 3. Turn off the status by either pressing Ctrl+C while in the window or closing the command prompt.
 
