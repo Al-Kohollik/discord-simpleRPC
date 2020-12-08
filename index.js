@@ -12,7 +12,8 @@ client.updatePresence({
 
   /**
   * Unix time converter: https://www.epochconverter.com/
-  * Don't use quotes around the timestamps
+  * Don't use quotes around the timestamp values
+  * For no timestamp, comment out both the startTimestamp and the endTimestamp lines
   * For elapsed time, only enter startTimestamp and comment out endTimestamp
   * For time left, enter both timestamps
   **/
