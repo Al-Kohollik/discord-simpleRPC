@@ -9,13 +9,14 @@ client.updatePresence({
   largeImageText: "large image toolip",
   smallImageKey: 'small image key from rich presence asset',
   smallImageText: "small image toolip",
-  instance: true,
+
   /**
   * Unix time converter: https://www.epochconverter.com/
-  * Don't use spaces in the timestamps
+  * Don't use quotes around the timestamps
   * For elapsed time, only enter startTimestamp and comment out endTimestamp
   * For time left, enter both timestamps
   **/
+  
   startTimestamp: 1607447950,
   //endTimestamp: 
 });
