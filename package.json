@@ -1,0 +1,15 @@
+{
+  "name": "discord-simplerpc",
+  "version": "1.0.0",
+  "description": "Simple rich presence client for a custom \"playing a game\" status",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Al-Kohollik",
+  "license": "MIT",
+  "dependencies": {
+    "discord-rich-presence": "0.0.8"
+  }
+}
