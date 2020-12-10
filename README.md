@@ -1,9 +1,12 @@
 # Discord SimpleRPC
 ## By Al-Kohollik
 A simple custom Discord Rich Presence Client to have any "Playing a Game" status.
-At least for now, Node.js is needed to be installed in order to run this.
+At least for now, [Node.js](https://nodejs.org/en/) is needed to be installed in order to run this.
 
 This is a WIP and I am planning on making it easier to customize and use.
+
+I'm just making this for fun, but I would really like to know what any of you think so please don't hesitate to DM me on Discord about anything or join me [here](https://discord.gg/ejMgVqFd) (just a random community server I'm active and mod in) :)
+
 
 ### Setup
 1. Create an application on the [Discord Developer Portal](https://discord.com/developers/applications) with whatever name you want "game" in your status to be.
@@ -17,4 +20,4 @@ This is a WIP and I am planning on making it easier to customize and use.
 3. Turn off the status by either pressing Ctrl+C while in the window or closing the command prompt.
 
 ### Help/Contact
-Create an issue or contact me at `Al Kohollik#7268`
+Create an issue or contact me at on Discord at `Al Kohollik#7268`
