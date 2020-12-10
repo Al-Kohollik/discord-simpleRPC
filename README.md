@@ -8,8 +8,8 @@ This is a WIP and I am planning on making it easier to customize and use.
 ### Setup
 1. Create an application on the [Discord Developer Portal](https://discord.com/developers/applications) with whatever name you want "game" in your status to be.
 2. Go to the "rich presence art assets" tab and click "add images" to add 2 images for a big image and a small icon to use in the Playing status.
-3. Download the source for this repo and open `index.js` with any text editor (Notepad++ for example) and edit the `const clientID` to have the value of the client ID from the Discord Application created in step 1.
-4. Edit the block within "updatePresence" (`details, state, largeImageKey, smallImageKey` and optional `largeImageText, smallImageText, startTimestamp, endTimestamp`) and save.
+3. Download this repo, open `config.ini` with any text editor (Notepad++ for example) and edit `clientID` with the value of the client ID from the Discord Application created in step 1.
+4. Add in the rest of the values in `config.ini` (`details, state, largeImageKey, smallImageKey` and optional `largeImageText, smallImageText, startTimestamp, endTimestamp`) and save. `largeImageKey` should be the name of the image you added in step 2 for the main status picture, while `smallImageKey` should be the name of the image you added for the smaller icon in the corner of the main picture.
 5. Run the `install.bat` file.
 ### How to Use
 1. Run the `start.bat` file.

@@ -1,23 +1,44 @@
-// put the client ID from your application in https://discord.com/developers/applications here and edit the things in the updatePresence block
-const clientID = '123456789102345678'
+const fs = require('fs');
+const ini = require('ini');
 
-const client = require('discord-rich-presence')(clientID);
-client.updatePresence({
-  details: "RPC line1 details",
-  state: "RPC line2 state",
-  largeImageKey: 'large image key from rich presence asset',
-  largeImageText: "large image toolip",
-  smallImageKey: 'small image key from rich presence asset',
-  smallImageText: "small image toolip",
+const config = ini.parse(fs.readFileSync('./config.ini', 'utf-8'));
+const client = require('discord-rich-presence')(config.clientID);
 
-  /**
-  * Unix time converter: https://www.epochconverter.com/
-  * Don't use quotes around the timestamp values
-  * For no timestamp, comment out both the startTimestamp and the endTimestamp lines
-  * For elapsed time, only enter startTimestamp and comment out endTimestamp
-  * For time left, enter both timestamps
-  **/
+if (config.Timestamps.startTimestamp == ''){
+
+  client.updatePresence({
+    details: config.Main.details,
+    state: config.Main.state,
+    largeImageKey: config.Assets.largeImageKey,
+    largeImageText: config.Assets.largeImageText,
+    smallImageKey: config.Assets.smallImageKey,
+    smallImageText: config.Assets.smallImageText,
+    endTimestamp: parseInt(config.Timestamps.endTimestamp)
+  });
+
+} else if (config.Timestamps.endTimestamp == ''){
+
+  client.updatePresence({
+    details: config.Main.details,
+    state: config.Main.state,
+    largeImageKey: config.Assets.largeImageKey,
+    largeImageText: config.Assets.largeImageText,
+    smallImageKey: config.Assets.smallImageKey,
+    smallImageText: config.Assets.smallImageText,
+    startTimestamp: parseInt(config.Timestamps.startTimestamp)
+  });
+
+} else {
   
-  startTimestamp: 1607447950,
-  //endTimestamp: 
-});
+  client.updatePresence({
+    details: config.Main.details,
+    state: config.Main.state,
+    largeImageKey: config.Assets.largeImageKey,
+    largeImageText: config.Assets.largeImageText,
+    smallImageKey: config.Assets.smallImageKey,
+    smallImageText: config.Assets.smallImageText,
+    startTimestamp: parseInt(config.Timestamps.startTimestamp),
+    endTimestamp: parseInt(config.Timestamps.endTimestamp)
+  });
+
+}
