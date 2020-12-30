@@ -1,3 +1,4 @@
 {
-    "ext": "js, json, ini"
+    "ext": "js, json, ini",
+    "delay": 10000
 }
