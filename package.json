@@ -3,12 +3,22 @@
   "version": "1.0.0",
   "description": "Simple rich presence client for a custom \"playing a game\" status",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
-  },
   "author": "Al-Kohollik",
   "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "build": "npm run buildwin && npm run buildmac && npm run buildlinux",
+    "buildwin": "pkg index.js --config package.json --target node12-win --out-path ./discord-simplerpc-windows",
+    "buildmac": "pkg index.js --config package.json --target node12-macos --out-path ./discord-simplerpc-macos",
+    "buildlinux": "pkg index.js --config package.json --target node12-linux --out-path ./discord-simplerpc-linux"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "assets": [
+      "node_modules/**/*"
+    ]
+  },
   "dependencies": {
     "discord-rich-presence": "0.0.8",
     "ini": "^1.3.6",
