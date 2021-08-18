@@ -44,3 +44,18 @@ client.updatePresence({
   startTimestamp: StartTimestamp,
   endTimestamp: EndTimestamp
 });
+
+
+// Console messages after client starts up
+var figlet = require('figlet');
+
+figlet('SimpleRPC', function(err, msg) {
+  if (err) {
+    console.log('(Should only be a text error) Something went wrong with figlet...');
+    console.dir(err);
+    return;
+  }
+  console.log(msg);
+  console.log("has started up. Check your Discord status!");
+  console.log("Don't forget to check the README for customization instructions.");
+});
