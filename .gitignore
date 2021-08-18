@@ -1,4 +1,4 @@
 node_modules
-discord-simplerpc-linux
-discord-simplerpc-macos
-discord-simplerpc-windows
+discord-simplerpc-linux/discord-simplerpc
+discord-simplerpc-macos/discord-simplerpc
+discord-simplerpc-windows/discord-simplerpc.exe
