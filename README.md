@@ -1,9 +1,6 @@
 # Discord SimpleRPC
 ## By Al-Kohollik
 A simple custom Discord Rich Presence Client to have any "Playing a Game" status you want. This is fully customizable and allows you to set your Game Status to be exactly the same as a real game! This client needs to be running on the same computer that is running your Discord client (like how a normal game runs while Discord is also open).
-For now, [Node.js](https://nodejs.org/en/) is needed to be installed in order to run this. This should be fixed and updated as a packaged and downloadable executable very soon.
-
-This is a WIP and I am planning on making it easier use.
 
 ## Setup
 ### Required
