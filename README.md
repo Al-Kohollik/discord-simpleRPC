@@ -20,4 +20,4 @@ A simple custom Discord Rich Presence Client to have any "Playing a Game" status
 4. Shut down the client and get rid of your status by either pressing Ctrl+C while in the window or exiting like a normal window.
 
 ## Help/Contact
-Create an issue or contact me on Discord at `Al Kohollik#7268`
+Create an issue or contact me on Discord @ `alkohollik`
